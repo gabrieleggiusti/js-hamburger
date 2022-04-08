@@ -7,7 +7,10 @@ console.log(menuHamburger);
 const activeClose = document.querySelector('.close');
 
 activeMenuH.addEventListener('click', function(){
-  menuHamburger.classList.add('active');
+
+  // Aggiungo la classe active ad menùHamburger
+  const domHamburgerMenu = document.querySelector ('.hamburger-menu')
+  domHamburgerMenu.classList.add('active');
 })
 
 activeClose.addEventListener('click', function(){
